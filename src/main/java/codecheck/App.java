@@ -7,7 +7,7 @@ public class App {
 
 		int a;
 		String s;
-		String output = null;
+		String output = "";
 
 		// ｍ以前の引数分処理
 		for (int i = 0, l = args.length-1; i < l; i++) {
@@ -20,7 +20,7 @@ public class App {
 				output = output + s;
 			}
 		}
-		if (output == null) {
+		if (output.isEmpty()) {
 			System.out.println(m);
 		} else {
 			System.out.println(output);
