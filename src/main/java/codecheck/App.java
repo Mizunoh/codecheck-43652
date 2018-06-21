@@ -7,7 +7,7 @@ public class App {
 
 		int a;
 		String s;
-		StringBuilder output = null;
+		String output = null;
 
 		// ｍ以前の引数分処理
 		for (int i = 0, l = args.length-1; i < l; i++) {
@@ -17,7 +17,7 @@ public class App {
 
 			// 割り切れる場合
 			if (m % a == 0) {
-				output.append(s);
+				output = output + s;
 			}
 		}
 		if (output == null) {
