@@ -3,6 +3,7 @@ package codecheck;
 public class App {
 	public static void main(String[] args) {
 		// mを取得
+		System.out.println(args[args.length -1]);
 		int m = Integer.parseInt(args[args.length -1]);
 
 		int a;
