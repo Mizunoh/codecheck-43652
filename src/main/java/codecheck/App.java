@@ -12,9 +12,8 @@ public class App {
 		// ｍ以前の引数分処理
 		for (int i = 0, l = args.length-1; i < l; i++) {
 			// aとsを取得
-			System.out.println(args[i].substring(args[i].indexOf(":")+1));
-			System.out.println(args[i].substring(0, args[i].indexOf(":")-1));
-			a = Integer.parseInt(args[i].substring(0, args[i].indexOf(":")-1));
+			System.out.println(args[i].substring(0, args[i].indexOf(":")-2));
+			a = Integer.parseInt(args[i].substring(0, args[i].indexOf(":")-2));
 			s = args[i].substring(args[i].indexOf(":")+1);
 
 			// 割り切れる場合
